@@ -110,7 +110,7 @@ clang
 
 :: built-ins
 set ffmpeg_options_builtin=--disable-autodetect amf bzlib cuda cuvid d3d11va dxva2 ^
-iconv lzma nvenc schannel zlib sdl2 ffnvcodec nvdec cuda-llvm
+iconv lzma nvenc schannel zlib sdl2 ffnvcodec nvdec cuda-llvm libndi_newtek
 
 :: common external libs
 set ffmpeg_options_basic=gmp libmp3lame libopus libvorbis libvpx libx264 libx265 ^
