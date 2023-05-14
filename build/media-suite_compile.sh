@@ -1979,6 +1979,7 @@ if { { [[ $mpv != n ]]  && ! mpv_disabled libplacebo; } ||
     do_vcs "$SOURCE_REPO_GLSLANG"; then
     do_uninstall "${_check[@]}"
     log dependencies /usr/bin/python ./update_glslang_sources.py
+        do_patch "https://patch-diff.githubusercontent.com/raw/KhronosGroup/glslang/pull/3144.patch" am
     do_cmakeinstall -DUNIX=OFF
     do_checkIfExist
 fi
